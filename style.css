@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    background: #E8CBC0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: grid;
+grid-template-rows: 30% auto ;
+
+    
+ 
+}
+
+  
+.song__img{
+    width: 46px;
+    height: 46px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.audio_{
+  
+    align-items: center;
+    
+}
+.song{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    background-color: #FEFFFF;
+    grid-template-columns: 50px 170px 277px auto auto;
+border-radius: 25px;
+margin-top: 1%;
+margin-bottom: 1%;
+}
+ h2{
+   
+    display: block;
+  text-align: left;
+    color: #17252A;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
+ }
+.song__img{
+    border-radius: 50px;
+}
+ .author{
+    
+   color: #17252A;
+    align-items: center;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 100;
+}  
+.player{
+    
+    align-items: center;
+    
+}
+.content{
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 30%;
+}
+.delete{
+    border-radius: 25px;
+    border: none;
+    background-color: #d1d3d3;
+    height: 28px;
+    width: 68px;
+    cursor: pointer;
+}
+.delete:hover{
+    
+    background-color: #f8e1da;
+    
+}
+form{
+    width: 15%;
+    height: 40%;
+    margin-bottom: 1%;
+    background-color: #feffff93;
+    border-radius: 15px;
+    margin-left: 2%;
+}
+input{
+    border-radius: 5px;
+    height: 20px;
+    border: none;
+    margin-bottom: 2px;
+}
