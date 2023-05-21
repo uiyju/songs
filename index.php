@@ -63,8 +63,8 @@ while ($row = $result->fetch_assoc())
 ?> 
 </div>
 <form id="form-auth"  method="POST" action="auth.php">
-<input type="text"        id="login"    name="login"    placeholder="введите логин"   required><br>
-<input type="password"    id="password" name="password" placeholder="введите пароль"  required><br>
+<input type="text"        id="login"    name="u_email"    placeholder="введите логин"   required><br>
+<input type="password"    id="password" name="u_password" placeholder="введите пароль"  required><br>
 <input type="submit" value="войти">
 </form>
     </div>

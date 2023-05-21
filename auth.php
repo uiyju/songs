@@ -18,13 +18,18 @@ $sql = "SELECT *
   $result-> execute();
   $result= $result->get_result();
 
+ 
+
   if ($row = $result -> fetch_assoc()){
 $response = [
   'status'=> 'true',
   'name'=> $row['u_nic'],
-  'login'=>$row['u_email']
+  'login'=>$row['u_email'],
+  
 ];
+
 $_SESSION["user-name"] = $row["u_nic"];
+
   }
   else{
     $response = [
