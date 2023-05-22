@@ -6,8 +6,8 @@
   }
   html{
     background: #E8CBC0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0) ;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #636FA4, #E8CBC0) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 display: grid;
 grid-template-rows: 30% auto ;
 
@@ -21,13 +21,22 @@ grid-template-rows: 30% auto ;
     height: 46px;
 }
 img{
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 5px;
 }
 .audio_{
   
     align-items: center;
     
+}
+.text{
+    text-align: left;
+    color: #17252A;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
 }
 .song{
     display: grid;
@@ -47,6 +56,9 @@ margin-bottom: 1%;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
 font-weight: 100;
+ }
+ a{
+    color: #17252A;
  }
 .song__img{
     border-radius: 50px;
@@ -70,13 +82,41 @@ font-weight: 100;
     margin-left: 2%;
     margin-right: 30%;
 }
+.random{
+    border-radius: 25px;
+    border: none;
+    background-color:  #f8e1da;
+    height: 28px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 2%;
+    
+}
+.random:hover{
+    
+    background-color: #d1d3d396;
+}
+.add{
+    border-radius: 25px;
+    border: none;
+    background-color: #f8e1da;
+    height: 28px;
+    cursor: pointer;
+    width: 100px;
+    
+}
+.add:hover{
+    
+    background-color: #636fa46c;
+}
 .delete{
     border-radius: 25px;
     border: none;
-    background-color: #d1d3d3;
+    background-color: #d1d3d396;
     height: 28px;
     width: 68px;
     cursor: pointer;
+    
 }
 .delete:hover{
     
@@ -84,16 +124,28 @@ font-weight: 100;
     
 }
 form{
-    width: 15%;
-    height: 40%;
+    width: 20%;
+    height: 55%;
     margin-bottom: 1%;
     background-color: #feffff93;
     border-radius: 15px;
     margin-left: 2%;
+    margin-bottom: 15px;
 }
 input{
+    padding: 1px;
     border-radius: 5px;
     height: 20px;
     border: none;
     margin-bottom: 2px;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+.profile{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 100;
+    margin-left: 2%;
+    margin-bottom: 10px;
 }

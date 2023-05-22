@@ -21,12 +21,12 @@ if (isset($_SESSION["user-name"])){
 </header>
 <body>
     <form class="form__insert" id="insert-song" enctype="multipart/form-data">
-  <input type="text"     name="title" id="title" placeholder="Введите название песни"     required><br>
+  <input type="text"      name="title" id="title" placeholder="Введите название песни"     required><br>
   <input type="text"     name="author" id="author" placeholder="Введите исполнителя" required><br>
   <input type="text"     name="text" id="text" placeholder="Введите текст песни" required><br>
   <input type="file"     name="picture" id="picture" placeholder="Загрузите обложку песни"><br>
   <input type="file"     name="audio" id="audio" placeholder="Загрузите песню"><br>
-  <input type="submit"   value="Добавить">
+  <input class="add" type="submit"   value="Добавить">
     </form>
     <button class="random" id="random" >Смешать записи</button>
     <div class="content"> 
@@ -47,7 +47,7 @@ while ($row = $result->fetch_assoc())
   <div class='song' data-id='$row[song_id]'>
           
           <img class='song__img' src='$row[photo]' alt='Обложка песни'>
-          <h2>$row[title]</h2>
+          <h2><a href='song_info.php?id=$row[song_id]'> $row[title]</a></h2>
           <p class='author'>Исполнитель: $row[author]</p>
           <audio class='player'
         controls
@@ -65,7 +65,7 @@ while ($row = $result->fetch_assoc())
 <form id="form-auth"  method="POST" action="auth.php">
 <input type="text"        id="login"    name="u_email"    placeholder="введите логин"   required><br>
 <input type="password"    id="password" name="u_password" placeholder="введите пароль"  required><br>
-<input type="submit" value="войти">
+<input class="add" type="submit" value="войти">
 </form>
     </div>
 </body>
