@@ -29,7 +29,7 @@ if (isset($_SESSION["user-name"])){
   <input class="add" type="submit"   value="Добавить">
     </form>
     <button class="random" id="random" >Смешать записи</button>
-    <div class="content"> 
+    <div class="content" id="content"> 
 <?php 
 $link = mysqli_connect("localhost", "root", "", "progect"); 
 if ($link == false){ 
@@ -43,7 +43,7 @@ $sql = "SELECT * FROM `songs`";
 $result = $link->query($sql);
 while ($row = $result->fetch_assoc())
 {
-  echo "<div class='audio_'>
+  echo "<div class='audio_' id='audio'>
   <div class='song' data-id='$row[song_id]'>
           
           <img class='song__img' src='$row[photo]' alt='Обложка песни'>

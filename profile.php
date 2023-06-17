@@ -1,7 +1,18 @@
 <?php session_start();
+ $link = mysqli_connect("localhost", "root", "", "progect"); 
+
+ if ($link == false){ 
+   print("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error()); 
+ } 
+ else { 
+   print("Соединение установлено успешно"); 
+ }
  
+ mysqli_set_charset($link, "utf8");
+ $_SESSION["user-name"] = $row["u_nic"];
+
 if(isset($_GET["exit"])){
-   unset($_SESSION("user-name"));
+   unset($_SESSION["user-name"]);
    header("Location: ./");
 }
 
